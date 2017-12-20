@@ -20,15 +20,34 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 72px;
+  padding: 0.6rem;
+  /* height: 72px; */
 }
 
 .Track-information h3 {
-  margin-bottom: .22rem;
+  /* margin-bottom: .22rem; */
+  padding: 0.25rem;
 }
 
 .Track-information p {
   font-size: .83rem;
   font-weight: 300;
   color: rgba(256, 256, 256, 0.8);
+  padding: 0.15rem;
+}
+
+.Track-information p a {
+  color: #fff053;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: block;
+}
+
+.Track-information p a:hover {
+  color: #fffbb7;
+}
+
+.Track-information p a:not([href]) {
+  display: none;
 }

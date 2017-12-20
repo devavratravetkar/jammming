@@ -79,6 +79,7 @@ class App extends React.Component {
     let name = this.state.playlistName;
     this.state.playlistTracks.forEach(track => trackUris.push(track.uri));
     Spotify.savePlaylist(name, trackUris).then(() => {
+      alert(`Playlist named ${name} saved to your Spotify!`);
       this.setState({
         searchResults: [],
         playlistName: defaultPlaylistName,
